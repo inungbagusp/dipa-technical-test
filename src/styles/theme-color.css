@@ -1,0 +1,36 @@
+@theme {
+
+  /* PRIMARY BRAND COLOR */
+  --primary: #0542fc;
+
+  /* BASE TEXT COLORS */
+  --text-white: #ffffff;
+  --text-black: #000000;
+
+  /* White on dark variations */
+  --text-white-soft: #ffffffa3;
+  --text-white-dim: #ffffff7a;
+
+  /* Black on light variations */
+  --text-black-soft: #000000b8;
+
+  /* BLUE-GRAY SCALE */
+  --text-gray-scale-900: #111729;
+  --text-gray-scale-800: #141f2e;
+  --text-gray-scale-muted: #6b7b94;
+
+  /* NEUTRAL GRAY SCALE */
+  --text-gray-muted: #677489;
+  --text-gray-deep: #4a5567;
+  --text-gray-light: #97a3b6;
+
+  /* LIGHT TEXT ON DARK */
+  --text-light-gray: #e5e9f1;
+  --text-light-soft: #f1f4f8;
+
+  /* BORDER COLORS */
+  --color-border-light: #DDE3EE;
+  --color-border-gray: #E3E8EF;
+  --color-border-light-gray: #E5E9F1;
+
+}
