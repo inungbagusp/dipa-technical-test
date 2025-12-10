@@ -20,3 +20,27 @@ export const fadeIn = {
 		},
 	},
 };
+
+export const staggerContainer = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.25,
+            delayChildren: 0.1,
+        },
+    },
+};
+
+export const marquee = {
+  animate: {
+    x: ["0%", "-50%"],
+    transition: {
+      x: {
+        repeat: Infinity,
+        repeatType: "loop",
+        duration: 10,
+        ease: "linear",
+      },
+    },
+  },
+};
