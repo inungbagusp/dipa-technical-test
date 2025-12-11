@@ -8,7 +8,7 @@ const Navbar = () => {
 	const [openDropdown, setOpenDropdown] = useState(false);
 
 	return (
-    <header className="w-full bg-white border-b border-[#E5E9F1]/80">
+    <header className="w-full bg-white border-b border-border-light-gray/80">
 		<Container className="h-[84px] px-[80px] flex items-center justify-between">
 			
 			{/* Logo */}

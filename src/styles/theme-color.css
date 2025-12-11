@@ -18,6 +18,7 @@
   --text-gray-scale-900: #111729;
   --text-gray-scale-800: #141f2e;
   --text-gray-scale-muted: #6b7b94;
+  --text-gray-scale-deep: #00112D;
 
   /* NEUTRAL GRAY SCALE */
   --text-gray-muted: #677489;
@@ -32,5 +33,6 @@
   --color-border-light: #DDE3EE;
   --color-border-gray: #E3E8EF;
   --color-border-light-gray: #E5E9F1;
-
+  --color-border-white-soft: #FFFFFF14;
+  --color-border-gray-soft: #E3E8F1;
 }

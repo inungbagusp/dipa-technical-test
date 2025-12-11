@@ -81,8 +81,12 @@
   /* FONT SIZES */
   --font-12: 12px;
   --font-14: 14px;
+  --font-16: 16px;
   --font-18: 18px;
   --font-20: 20px;
+  --font-24: 24px;
+  --font-28: 28px;
+  --font-40: 40px;
   --font-48: 48px;
   --font-56: 56px;
   --font-64: 64px;
@@ -116,8 +120,12 @@
   /* Font sizes */
   .ts-12 { font-size: var(--font-12); }
   .ts-14 { font-size: var(--font-14); }
+  .ts-16 { font-size: var(--font-16); }
   .ts-18 { font-size: var(--font-18); }
   .ts-20 { font-size: var(--font-20); }
+  .ts-24 { font-size: var(--font-24); }
+  .ts-28 { font-size: var(--font-28); }
+  .ts-40 { font-size: var(--font-40); }
   .ts-48 { font-size: var(--font-48); }
   .ts-56 { font-size: var(--font-56); }
   .ts-64 { font-size: var(--font-64); }

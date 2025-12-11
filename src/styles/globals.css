@@ -10,6 +10,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --font-sans: var(--font-roobert);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +23,30 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-roobert);
+  font-family: var(--font-sans);
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.bg-platform-gradient {
+  background: radial-gradient(circle at bottom, rgba(147,210,255,0.22), white 75%);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

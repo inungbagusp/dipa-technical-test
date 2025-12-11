@@ -1,5 +1,11 @@
 import Hero from "@/sections/Hero";
 import BrandSlider from "@/sections/BrandSlider";
+import ToolkitSection from "@/sections/ToolkitSection";
+import EnterpriseSection from "@/sections/EnterpriseSection";
+import PlatformSection from "@/sections/PlatformSection";
+import StatusSection from "@/sections/StatusSection";
+import PricingSection from "@/sections/PricingSection";
+import AiAutomation from "@/sections/AiAutomation";
 
 export default function Home() {
   return (
@@ -7,6 +13,12 @@ export default function Home() {
       <main className="bg-[#F7F9FC]">
         <Hero />
         <BrandSlider />
+        <ToolkitSection />
+        <EnterpriseSection />
+        <PlatformSection />
+        <StatusSection />
+        <PricingSection />
+        <AiAutomation />
       </main>
     </div>
   );

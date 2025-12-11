@@ -11,7 +11,7 @@ const brands = [
   { src: "/image/logo/phantom.png", alt: "Phantom" },
 ];
 
-export default function BrandSlider() {
+const BrandSlider = () => {
     return (
         <section>
             <div className="max-w-[1320px] mx-auto">
@@ -25,14 +25,8 @@ export default function BrandSlider() {
 
                     {/* RIGHT SLIDER */}
                     <div className="flex-1 overflow-hidden">
-                        <motion.div
-                            variants={marquee}
-                            animate="animate"
-                            className="flex whitespace-nowrap"
-                        >
-                            <div
-                            className="flex items-center justify-center border-t border-b border-border-gray"
-                            >
+                        <div className="flex whitespace-nowrap marquee">
+                            <div className="flex items-center justify-center border-t border-b border-border-gray track">
                                 <div className="w-[250px] h-[180px] flex justify-center border-r border-border-gray">
                                     <Image
                                         src={brands[0].src}
@@ -106,10 +100,12 @@ export default function BrandSlider() {
                                     />
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     );
 }
+
+export default BrandSlider;
