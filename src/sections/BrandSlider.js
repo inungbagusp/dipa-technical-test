@@ -17,7 +17,17 @@ const BrandSlider = () => {
             <div className="max-w-[1320px] mx-auto">
                 <div className="flex items-center">
                     {/* LEFT TEXT */}
-                    <div className="max-w-[320px] py-[60px] px-[48px] h-[180px] border border-border-gray">
+                    <div className={[
+                        "max-w-[320px]",
+                        "py-[60px]",
+                        "px-[48px]",
+                        "h-[180px]",
+                        "border",
+                        "border-border-gray",
+                        "hidden",
+                        "md:block"
+                        ].join(" ")}
+                    >
                         <p className="ff-roobert font-normal ts-20 lh-150 ls-0 text-(--text-gray-deep)">
                         {`Trusted by 100+ world's best brand`}
                         </p>
@@ -27,6 +37,22 @@ const BrandSlider = () => {
                     <div className="flex-1 overflow-hidden">
                         <div className="flex whitespace-nowrap marquee">
                             <div className="flex items-center justify-center border-t border-b border-border-gray track">
+                                <div className={[
+                                    "max-w-[320px]",
+                                    "py-[60px]",
+                                    "px-[48px]",
+                                    "h-[180px]",
+                                    "border",
+                                    "border-border-gray",
+                                    "text-wrap",
+                                    "block",
+                                    "md:hidden"
+                                    ].join(" ")}
+                                >
+                                    <p className="ff-roobert font-normal ts-20 lh-150 ls-0 text-(--text-gray-deep)">
+                                    {`Trusted by 100+ world's best brand`}
+                                    </p>
+                                </div>
                                 <div className="w-[250px] h-[180px] flex justify-center border-r border-border-gray">
                                     <Image
                                         src={brands[0].src}

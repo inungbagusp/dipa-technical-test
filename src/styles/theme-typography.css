@@ -1,147 +1,183 @@
-/* FONT FACE (fixed for correct formats) */
+/* FONT FACE DEFINITIONS */
 
 /* Roobert Regular (400) */
 @font-face {
-  font-family: "Roobert";
-  src: url("/fonts/Roobert/Roobert-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Roobert";
+    src: url("/fonts/Roobert/Roobert-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Roobert Medium (500) */
 @font-face {
-  font-family: "Roobert";
-  src: url("/fonts/Roobert/Roobert-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Roobert";
+    src: url("/fonts/Roobert/Roobert-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Inter */
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Inter";
+    src: url("/fonts/Inter/Inter-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Inter Tight */
 @font-face {
-  font-family: "Inter Tight";
-  src: url("/fonts/InterTight/InterTight-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Inter Tight";
+    src: url("/fonts/InterTight/InterTight-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "Inter Tight";
-  src: url("/fonts/InterTight/InterTight-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Inter Tight";
+    src: url("/fonts/InterTight/InterTight-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Neue Montreal */
 @font-face {
-  font-family: "Neue Montreal";
-  src: url("/fonts/NeueMontreal/NeueMontreal-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Neue Montreal";
+    src: url("/fonts/NeueMontreal/NeueMontreal-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "Neue Montreal";
-  src: url("/fonts/NeueMontreal/NeueMontreal-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Neue Montreal";
+    src: url("/fonts/NeueMontreal/NeueMontreal-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 
-/* =====================================
-   TAILWIND THEME TOKENS
-===================================== */
+/* THEME TOKENS */
 @theme {
+    /* Font Families */
+    --font-roobert: "Roobert", ui-sans-serif, system-ui;
+    --font-inter: "Inter", ui-sans-serif, system-ui;
+    --font-intertight: "Inter Tight", ui-sans-serif, system-ui;
+    --font-montreal: "Neue Montreal", ui-sans-serif, system-ui;
 
-  /* FONT FAMILIES */
-  --font-roobert: "Roobert", ui-sans-serif, system-ui;
-  --font-inter: "Inter", ui-sans-serif, system-ui;
-  --font-intertight: "Inter Tight", ui-sans-serif, system-ui;
-  --font-montreal: "Neue Montreal", ui-sans-serif, system-ui;
+    /* Font Sizes */
+    --font-12: 12px;
+    --font-14: 14px;
+    --font-16: 16px;
+    --font-18: 18px;
+    --font-20: 20px;
+    --font-24: 24px;
+    --font-28: 28px;
+    --font-40: 40px;
+    --font-48: 48px;
+    --font-56: 56px;
+    --font-64: 64px;
+    --font-72: 72px;
 
-  /* FONT SIZES */
-  --font-12: 12px;
-  --font-14: 14px;
-  --font-16: 16px;
-  --font-18: 18px;
-  --font-20: 20px;
-  --font-24: 24px;
-  --font-28: 28px;
-  --font-40: 40px;
-  --font-48: 48px;
-  --font-56: 56px;
-  --font-64: 64px;
-  --font-72: 72px;
+    /* Line Heights */
+    --lh-120: 120%;
+    --lh-130: 130%;
+    --lh-150: 150%;
+    --lh-155: 155%;
+    --lh-160: 160%;
+    --lh-20px: 20px;
 
-  /* LINE HEIGHT */
-  --lh-120: 120%;
-  --lh-130: 130%;
-  --lh-150: 150%;
-  --lh-155: 155%;
-  --lh-160: 160%;
-  --lh-20px: 20px;
-
-  /* LETTER SPACING */
-  --ls-neg2: -0.02em;
-  --ls-0: 0em;
-  --ls-1: 0.01em;
-  --ls-4: 0.04em;
+    /* Letter Spacing */
+    --ls-neg2: -0.02em;
+    --ls-0: 0em;
+    --ls-1: 0.01em;
+    --ls-4: 0.04em;
 }
 
 
-/* UTILITIES CLASSES */
+/* UTILITIES (MOBILE-FIRST) */
 @layer utilities {
 
-  /* Font families */
-  .ff-roobert { font-family: var(--font-roobert); }
-  .ff-inter { font-family: var(--font-inter); }
-  .ff-intertight { font-family: var(--font-intertight); }
-  .ff-montreal { font-family: var(--font-montreal); }
+    /* Font families */
+    .ff-roobert { font-family: var(--font-roobert); }
+    .ff-inter { font-family: var(--font-inter); }
+    .ff-intertight { font-family: var(--font-intertight); }
+    .ff-montreal { font-family: var(--font-montreal); }
 
-  /* Font sizes */
-  .ts-12 { font-size: var(--font-12); }
-  .ts-14 { font-size: var(--font-14); }
-  .ts-16 { font-size: var(--font-16); }
-  .ts-18 { font-size: var(--font-18); }
-  .ts-20 { font-size: var(--font-20); }
-  .ts-24 { font-size: var(--font-24); }
-  .ts-28 { font-size: var(--font-28); }
-  .ts-40 { font-size: var(--font-40); }
-  .ts-48 { font-size: var(--font-48); }
-  .ts-56 { font-size: var(--font-56); }
-  .ts-64 { font-size: var(--font-64); }
-  .ts-72 { font-size: var(--font-72); }
+    /* Font sizes */
+    .ts-12 { font-size: var(--font-12); }
+    .ts-14 { font-size: var(--font-14); }
+    .ts-16 { font-size: var(--font-16); }
+    .ts-18 { font-size: var(--font-18); }
+    .ts-20 { font-size: var(--font-20); }
+    .ts-24 { font-size: var(--font-24); }
+    .ts-28 { font-size: var(--font-28); }
+    .ts-40 { font-size: var(--font-40); }
+    .ts-48 { font-size: var(--font-48); }
+    .ts-56 { font-size: var(--font-56); }
+    .ts-64 { font-size: var(--font-64); }
+    .ts-72 { font-size: var(--font-72); }
 
-  /* Line heights */
-  .lh-120 { line-height: var(--lh-120); }
-  .lh-130 { line-height: var(--lh-130); }
-  .lh-150 { line-height: var(--lh-150); }
-  .lh-155 { line-height: var(--lh-155); }
-  .lh-160 { line-height: var(--lh-160); }
-  .lh-20px { line-height: var(--lh-20px); }
+    /* Line heights */
+    .lh-120 { line-height: var(--lh-120); }
+    .lh-130 { line-height: var(--lh-130); }
+    .lh-150 { line-height: var(--lh-150); }
+    .lh-155 { line-height: var(--lh-155); }
+    .lh-160 { line-height: var(--lh-160); }
+    .lh-20px { line-height: var(--lh-20px); }
 
-  /* Letter spacing */
-  .ls-neg2 { letter-spacing: var(--ls-neg2); }
-  .ls-0 { letter-spacing: var(--ls-0); }
-  .ls-1 { letter-spacing: var(--ls-1); }
-  .ls-4 { letter-spacing: var(--ls-4); }
+    /* Letter spacings */
+    .ls-neg2 { letter-spacing: var(--ls-neg2); }
+    .ls-0 { letter-spacing: var(--ls-0); }
+    .ls-1 { letter-spacing: var(--ls-1); }
+    .ls-4 { letter-spacing: var(--ls-4); }
+
+
+    /* RESPONSIVE UTILITIES FOR TYPOGRAPHY*/
+
+    /* sm: ≥ 640px */
+    @media (min-width: 640px) {
+        .sm\:ts-40 { font-size: var(--font-40); }
+        .sm\:ts-48 { font-size: var(--font-48); }
+        .sm\:ts-56 { font-size: var(--font-56); }
+        .sm\:ts-64 { font-size: var(--font-64); }
+        .sm\:ts-72 { font-size: var(--font-72); }
+    }
+
+    /* md: ≥ 768px */
+    @media (min-width: 768px) {
+        .md\:ts-40 { font-size: var(--font-40); }
+        .md\:ts-48 { font-size: var(--font-48); }
+        .md\:ts-56 { font-size: var(--font-56); }
+        .md\:ts-64 { font-size: var(--font-64); }
+        .md\:ts-72 { font-size: var(--font-72); }
+    }
+
+    /* lg: ≥ 1024px */
+    @media (min-width: 1024px) {
+        .lg\:ts-40 { font-size: var(--font-40); }
+        .lg\:ts-48 { font-size: var(--font-48); }
+        .lg\:ts-56 { font-size: var(--font-56); }
+        .lg\:ts-64 { font-size: var(--font-64); }
+        .lg\:ts-72 { font-size: var(--font-72); }
+    }
+
+    /* xl: ≥ 1280px */
+    @media (min-width: 1280px) {
+        .xl\:ts-40 { font-size: var(--font-40); }
+        .xl\:ts-48 { font-size: var(--font-48); }
+        .xl\:ts-56 { font-size: var(--font-56); }
+        .xl\:ts-64 { font-size: var(--font-64); }
+        .xl\:ts-72 { font-size: var(--font-72); }
+    }
 }
