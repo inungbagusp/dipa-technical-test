@@ -14,40 +14,62 @@ const PlatformSection = () => {
             viewport={{ once: true, amount: 0.2 }}
         >
             <div className="bg-platform-gradient">
-                <Container className="relative pt-[100px] text-center border-r border-l border-border-gray">
+                <Container className={[
+                    "relative",
+                    "pt-[24px]",
+                    "px-[24px]",
+                    'pb-0',
+                    "text-center",
+                    "border-r",
+                    "border-l",
+                    "border-border-gray",
+                    "md:pt-[40px]",
+                    "md:px-[40px]",
+                    "xl:pt-[100px]",
+                ].join(" ")}
+                >
                     {/* FLOATING TOP LEFT IMAGE */}
                     <motion.div
                         variants={fadeUp}
-                        className="absolute left-[20%] top-[12%] -translate-x-1/2"
+                        className="absolute top-[10%] left-[14%] lg:left-[20%] lg:top-[12%] -translate-x-1/2"
                     >
                         <Image
                             src="/image/platform/platform-left.png"
                             width={120}
                             height={82}
                             alt="platform-left"
-                            className="drop-shadow-xl"
+                            className="drop-shadow-xl z-1 h-auto w-[80px] lg:w-[120px] lg:h-[82px]"
                         />
                     </motion.div>
 
                     {/* FLOATING TOP RIGHT IMAGE */}
                     <motion.div
                         variants={fadeUp}
-                        className="absolute right-[20%] top-[20%] translate-x-1/2"
+                        className="absolute right-[10%] top-[14%] translate-x-1/2 lg:right-[20%] lg:top-[20%]"
                     >
                         <Image
                             src="/image/platform/platform-right.png"
                             width={120}
                             height={82}
                             alt="platform-right"
-                            className="drop-shadow-xl"
+                            className="drop-shadow-xl z-1 h-auto w-[80px] lg:w-[120px] lg:h-[82px]"
                         />
                     </motion.div>
 
-                    <div className="max-w-[560px] mx-auto">
+                    <div className="max-w-[560px] mx-auto z-10">
                         {/* LABEL */}
                         <motion.p
                             variants={fadeUp}
-                            className="font-medium ts-16 lh-160 ls-4 text-(--primary) mb-2 uppercase"
+                            className={[
+                                "font-medium",
+                                "text-[14px]",
+                                "lh-160",
+                                "ls-4",
+                                "text-(--primary)",
+                                "mb-2",
+                                "uppercase",
+                                "lg:text-[16px]",
+                            ].join(" ")}
                         >
                             The Platform
                         </motion.p>
@@ -55,7 +77,15 @@ const PlatformSection = () => {
                         {/* HEADING */}
                         <motion.h2
                             variants={fadeUp}
-                            className="ts-56 font-medium text-(--text-black) lh-120 ls-neg2 mb-5"
+                            className={[
+                                "text-[28px]",
+                                "font-medium",
+                                "text-(--text-black)",
+                                "lh-120",
+                                "ls-neg2",
+                                "mb-5",
+                                "lg:text-[56px]",
+                            ].join(" ")}
                         >
                             Connected AI <br /> orchestration platform
                         </motion.h2>
@@ -63,21 +93,27 @@ const PlatformSection = () => {
                         {/* SUBTEXT */}
                         <motion.p
                             variants={fadeUp}
-                            className="ts-20 lh-160 ls-0 font-normal text-(--text-gray-muted) max-w-[520px] mx-auto"
+                            className={[
+                                "text-[14px]",
+                                "lh-160",
+                                "ls-0",
+                                "font-normal",
+                                "text-(--text-gray-muted)",
+                                "max-w-[520px]",
+                                "mx-auto",
+                                "lg:text-[20px]",
+                            ].join(" ")}
                         >
                             Powerful and production-ready, our cloud platform has the solutions you need to succeed.
                         </motion.p>
                     </div>
 
                     {/* WORKFLOW IMAGE */}
-                    <motion.div variants={fadeUp} className="mt-[56px] flex justify-center">
-                        <Image
+                    <motion.div variants={fadeUp} className="mt-[20px] lg:mt-[56px] mx-auto">
+                        <img
                             src="/image/platform/platform-dashboard.png"
                             alt="platform-main"
-                            width={1080}
-                            height={572}
-                            className="w-full h-auto"
-                            priority
+                            className="w-full"
                         />
                     </motion.div>
 

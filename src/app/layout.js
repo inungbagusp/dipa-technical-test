@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
-import Navbar from "@/components/Navbar";
+import NavbarContainer from "@/components/Navbar/NavbarContainer";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Moniveo",
@@ -10,8 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <NavbarContainer />
         {children}
+        <Footer />
       </body>
     </html>
   );

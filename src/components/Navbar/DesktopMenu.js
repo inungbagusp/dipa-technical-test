@@ -4,7 +4,7 @@ import Container from "@/components/UI/Container";
 import Image from "next/image";
 import { useState } from "react";
 
-const Navbar = () => {
+const DesktopMenu = () => {
 	const [openDropdown, setOpenDropdown] = useState(false);
 
 	return (
@@ -76,4 +76,4 @@ const Navbar = () => {
   	);
 }
 
-export default Navbar;
+export default DesktopMenu;

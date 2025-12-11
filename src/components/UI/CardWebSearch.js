@@ -21,7 +21,7 @@ const CardWebSearch = () => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSearch()}
-                className="w-full bg-transparent outline-none ff-roobert font-regular text-(--text-gray-scale-muted) ts-20 lh-160"
+                className="w-full bg-transparent outline-none ff-roobert font-regular text-(--text-gray-scale-muted) text-[14px] lg:text-[20px] lh-160"
             />
 
             {/* Bottom Row */}
@@ -38,7 +38,7 @@ const CardWebSearch = () => {
                         className="flex items-center gap-2 px-4 h-10 rounded-full border border-border-light-gray bg-white text-[#141F2E] cursor-pointer"
                     >
                         <Image src="/image/icon/globe.svg" width={18} height={18} alt="Globe" />
-                        <span className="ts-14 lh-150 ls-0 ff-roobert font-regular text-(--text-gray-scale-900)">Web Search</span>
+                        <span className="text-[10px] lg:text-[14px] lh-150 ls-0 ff-roobert font-regular text-(--text-gray-scale-900)">Web Search</span>
                     </button>
                 </div>
 
