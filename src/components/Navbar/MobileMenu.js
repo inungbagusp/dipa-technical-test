@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Container from "@/components/UI/Container";
 
-export default function MobileMenu() {
+const MobileMenu = () => {
     const [open, setOpen] = useState(false);
     const [openSolutions, setOpenSolutions] = useState(false);
 
@@ -12,8 +12,8 @@ export default function MobileMenu() {
                 <Image src="/image/logo/logo.svg" width={140} height={22} alt="Moniveo" />
 
                 {/* Hamburger */}
-                <button onClick={() => setOpen(!open)}>
-                    <Image src="/image/icon/hamburger.svg" width={24} height={24} alt="menu" />
+                <button onClick={() => setOpen(!open)} className="cursor-pointer">
+                    <Image src="/image/icon/burger-menu.svg" width={24} height={24} alt="menu" />
                 </button>
             </Container>
 
@@ -30,44 +30,42 @@ export default function MobileMenu() {
                     open ? "translate-x-0" : "translate-x-full"
                 }`}
             >
-                <div className="p-6 flex flex-col gap-4 text-[16px] ff-roobert">
-
-                    <a className="py-2">Platform</a>
-
-                    {/* Solutions accordion */}
-                    <div>
-                        <button
-                            className="flex justify-between items-center w-full py-2"
-                            onClick={() => setOpenSolutions(!openSolutions)}
-                        >
-                            Solutions
-                            <Image
-                                src="/image/icon/chevron-down.svg"
-                                width={12}
-                                height={12}
-                                alt=""
-                                className={`transition ${openSolutions ? "rotate-180" : ""}`}
-                            />
-                        </button>
-
-                        {openSolutions && (
-                            <div className="pl-4 flex flex-col gap-2">
-                                <a className="py-1">Workflow Automation</a>
-                                <a className="py-1">AI Agents</a>
-                                <a className="py-1">Data Analytics</a>
-                                <a className="py-1">Integrations</a>
-                            </div>
-                        )}
+                <div className="p-6 flex flex-col justify-between h-full">
+                    <div className="flex flex-col gap-4 text-[16px] ff-roobert">
+                        <a className="py-2 ts-16 lh-150 ls-1 text-(--text-gray-scale-900)">Platform</a>
+                        {/* Solutions accordion */}
+                        <div>
+                            <button
+                                className="flex justify-between items-center w-full py-2"
+                                onClick={() => setOpenSolutions(!openSolutions)}
+                            >
+                                <span className="font-normal ts-16 lh-150 ls-1 text-(--text-gray-scale-900)">Solutions</span>
+                                <Image
+                                    src="/image/icon/chevron-down.svg"
+                                    width={24}
+                                    height={24}
+                                    alt=""
+                                    className={`transition ${openSolutions ? "rotate-180" : ""}`}
+                                />
+                            </button>
+                            {openSolutions && (
+                                <div className="pl-4 flex flex-col gap-2">
+                                    <a className="py-1 ts-14 lh-150 ls-1 text-(--text-gray-scale-900)">Workflow Automation</a>
+                                    <a className="py-1 ts-14 lh-150 ls-1 text-(--text-gray-scale-900)">AI Agents</a>
+                                    <a className="py-1 ts-14 lh-150 ls-1 text-(--text-gray-scale-900)">Data Analytics</a>
+                                    <a className="py-1 ts-14 lh-150 ls-1 text-(--text-gray-scale-900)">Integrations</a>
+                                </div>
+                            )}
+                        </div>
+                        <a className="py-2 ts-16 lh-150 ls-1 text-(--text-gray-scale-900)">Resources</a>
+                        <a className="py-2 ts-16 lh-150 ls-1 text-(--text-gray-scale-900)">Pricing</a>
                     </div>
 
-                    <a className="py-2">Resources</a>
-                    <a className="py-2">Pricing</a>
-
                     <div className="mt-6 flex flex-col gap-3">
-                        <button className="h-[48px] rounded-full border text-blue-900">
+                        <button className="h-[48px] rounded-full border border-border-light text-(--text-gray-scale-800)">
                             Login
                         </button>
-                        <button className="h-[48px] rounded-full bg-blue-600 text-white">
+                        <button className="h-[48px] rounded-full bg-linear-to-r from-[#3C7BFF] to-[#0542FC] shadow-md text-white">
                             Sign Up
                         </button>
                     </div>
@@ -77,3 +75,5 @@ export default function MobileMenu() {
         </>
     );
 }
+
+export default MobileMenu;

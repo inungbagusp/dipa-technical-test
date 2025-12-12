@@ -5,7 +5,26 @@ import Link from "next/link";
 
 const CopyRight = () => {
     return (
-        <div className="border-t border-border-white-soft py-7 flex items-center justify-between">
+        <div className={[
+                "border-t",
+                "border-border-white-soft",
+                "pt-0",
+                "pb-[40px]",
+                "px-[24px]",
+                "flex",
+                "flex-col",
+                "items-center",
+                "gap-4",
+                "justify-between",
+                "md:flex-row",
+                "md:items-left",
+                "md:px-0",
+                "md:py-7",
+                "md:px-[24px]",
+                "lg:px-[40px]",
+                "xl:px-0"
+            ].join(" ")}
+        >
           
             <p className="text-(--text-gray-light) ts-14 font-normal lh-120 ls-0">
                 ©2025 Monievo Technology, Inc.

@@ -1,7 +1,7 @@
 "use client";
 
 import { useInView } from "react-intersection-observer";
-import CounterCard from "@/components/UI/CounterCard";
+import CounterCard from "@/components/CounterCard";
 import Container from "@/components/UI/Container";
 
 const StatusSection = () => {

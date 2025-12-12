@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Container from "@/components/UI/Container";
-import CardWebSearch from "@/components/UI/CardWebSearch";
+import CardWebSearch from "@/components/CardWebSearch";
 import { motion } from "framer-motion";
 import { fadeUp, fadeIn, staggerContainer } from "@/utils/motion";
 
