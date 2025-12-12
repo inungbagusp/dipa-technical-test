@@ -15,7 +15,7 @@ const NavbarContainer = () => {
     }, []);
 
     return (
-        <header className="w-full border-b border-border-light-gray/80 bg-white">
+        <header className="w-full border-b border-border-light-gray/80 bg-white sticky top-0 z-999">
             {isDesktop ? <DesktopMenu /> : <MobileMenu />}
         </header>
     );

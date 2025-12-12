@@ -1,11 +1,16 @@
 "use client";
 
-import Container from "@/components/UI/Container";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import Container from "@/components/UI/Container";
+import LoginForm from "@/components/Auth/LoginForm";
+import SignupForm from "@/components/Auth/SignUpForm";
 
 const DesktopMenu = () => {
 	const [openDropdown, setOpenDropdown] = useState(false);
+	const [activePopup, setActivePopup] = useState(null);
+
 
 	return (
 		<header className="w-full bg-white border-b border-border-light-gray/80">
@@ -13,7 +18,9 @@ const DesktopMenu = () => {
 				
 				{/* Logo */}
 				<div className="flex items-center gap-2">
-					<Image src="/image/logo/logo.svg" alt="Moniveo" width={156} height={24} />
+					<Link href="/">
+						<Image src="/image/logo/logo.svg" alt="Moniveo" width={156} height={24} />
+					</Link>
 				</div>
 
 				{/* Navigation */}
@@ -62,15 +69,35 @@ const DesktopMenu = () => {
 				</nav>
 
 				{/* Buttons */}
-				<div className="flex items-center gap-4 ml-6">
-					<button className="h-[48px] w-[89px] px-6 py-2 rounded-full border border-border-light text-(--text-gray-scale-800) font-roobert ts-14 lh-150 ls-1 text">
+				<div className="flex items-center gap-4 ml-6 relative">
+					<button
+						onClick={() => setActivePopup(activePopup === "login" ? null : "login")}
+						className="cursor-pointer h-[48px] w-[89px] px-6 py-2 rounded-full border border-border-light text-(--text-gray-scale-800) font-roobert ts-14 lh-150 ls-1 text"
+					>
 						Login
 					</button>
-					<button className="h-[48px] w-[105px] px-6 py-2 rounded-full text-white font-roobert ts-14 lh-150 ls-1 text bg-linear-to-r from-[#3C7BFF] to-[#0542FC] shadow-md">
+
+					{/* LoginForm */}
+					{activePopup === "login" && (
+						<div className="absolute top-[60px] right-0 bg-white shadow-lg border border-gray-200 rounded-md p-4 z-50 w-[260px]">
+							<LoginForm setActivePopup={setActivePopup} />
+						</div>
+					)}
+
+					<button
+						onClick={() => setActivePopup(activePopup === "signup" ? null : "signup")}
+						className="cursor-pointer h-[48px] w-[105px] px-6 py-2 rounded-full text-white font-roobert ts-14 lh-150 ls-1 text bg-linear-to-r from-[#3C7BFF] to-[#0542FC] shadow-md"
+					>
 						Sign Up
 					</button>
-				</div>
 
+					{/* SignupForm */}
+					{activePopup === "signup" && (
+						<div className="absolute top-[60px] right-0 bg-white shadow-lg border border-gray-200 rounded-md p-4 z-50 w-[260px]">
+							<SignupForm setActivePopup={setActivePopup} />
+						</div>
+					)}
+				</div>
 			</Container>
 		</header>
   	);

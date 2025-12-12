@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Container from "@/components/UI/Container";
+import Link from "next/link";
 
 const MobileMenu = () => {
     const [open, setOpen] = useState(false);
@@ -9,7 +10,9 @@ const MobileMenu = () => {
     return (
         <>
             <Container className="h-[70px] px-6 flex items-center justify-between">
-                <Image src="/image/logo/logo.svg" width={140} height={22} alt="Moniveo" />
+                <Link href="/">
+                    <Image src="/image/logo/logo.svg" width={140} height={22} alt="Moniveo" />
+                </Link>
 
                 {/* Hamburger */}
                 <button onClick={() => setOpen(!open)} className="cursor-pointer">
@@ -62,12 +65,20 @@ const MobileMenu = () => {
                     </div>
 
                     <div className="mt-6 flex flex-col gap-3">
-                        <button className="h-[48px] rounded-full border border-border-light text-(--text-gray-scale-800)">
-                            Login
-                        </button>
-                        <button className="h-[48px] rounded-full bg-linear-to-r from-[#3C7BFF] to-[#0542FC] shadow-md text-white">
-                            Sign Up
-                        </button>
+                        <Link href="/login">
+                            <button
+                                onClick={() => setOpen(false)}
+                                className="w-full h-[48px] rounded-full border border-border-light text-(--text-gray-scale-800)">
+                                Login
+                            </button>
+                        </Link>
+                        <Link href="/signup">
+                            <button
+                                onClick={() => setOpen(false)}
+                                className="w-full h-[48px] rounded-full bg-linear-to-r from-[#3C7BFF] to-[#0542FC] shadow-md text-white">
+                                Sign Up
+                            </button>
+                        </Link>
                     </div>
 
                 </div>

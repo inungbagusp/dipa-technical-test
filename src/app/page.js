@@ -6,20 +6,23 @@ import PlatformSection from "@/sections/PlatformSection";
 import StatusSection from "@/sections/StatusSection";
 import PricingSection from "@/sections/PricingSection";
 import AiAutomation from "@/sections/AiAutomation";
+import CustomLayout from "@/components/Layout/CustomLayout";
 
 export default function Home() {
-  return (
-    <div>
-      <main className="bg-[#F7F9FC]">
-        <Hero />
-        <BrandSlider />
-        <ToolkitSection />
-        <EnterpriseSection />
-        <PlatformSection />
-        <StatusSection />
-        <PricingSection />
-        <AiAutomation />
-      </main>
-    </div>
-  );
+	return (
+		<div>
+			<main className="bg-[#F7F9FC]">
+				<CustomLayout>
+					<Hero />
+					<BrandSlider />
+					<ToolkitSection />
+					<EnterpriseSection />
+					<PlatformSection />
+					<StatusSection />
+					<PricingSection />
+					<AiAutomation />
+				</CustomLayout>
+			</main>
+		</div>
+	);
 }
