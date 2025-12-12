@@ -63,7 +63,7 @@ const DesktopMenu = () => {
 
 				{/* Buttons */}
 				<div className="flex items-center gap-4 ml-6">
-					<button className="h-[48px] w-[89px] px-6 py-2 rounded-full border border-border-light text-blue-900 font-roobert ts-14 lh-150 ls-1 text">
+					<button className="h-[48px] w-[89px] px-6 py-2 rounded-full border border-border-light text-(--text-gray-scale-800) font-roobert ts-14 lh-150 ls-1 text">
 						Login
 					</button>
 					<button className="h-[48px] w-[105px] px-6 py-2 rounded-full text-white font-roobert ts-14 lh-150 ls-1 text bg-linear-to-r from-[#3C7BFF] to-[#0542FC] shadow-md">

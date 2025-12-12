@@ -4,13 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { footerSections, socialLinks } from "@/data/footer";
 import Container from "@/components/UI/Container";
-import CopyRight from "@/components/UI/Copyright";
+import CopyRight from "@/components/Copyright";
 
-const Footer = () => {
+const FooterDesktop = () => {
     return (
         <>
             <footer className="border-b border-border-gray bg-white">
-                <Container className="container mx-auto px-[80px] py-[64px] border-r border-l border-border-gray">
+                <Container className={[
+                    "container",
+                    "mx-auto",
+                    "px-[40px]",
+                    "py-[40px]",
+                    "border-r",
+                    "border-l",
+                    "border-border-gray",
+                    "xl:px-[80px]",
+                    "xl:py-[64px]",
+                ].join(" ")}>
                     <div className="flex gap-10">
                         {/* 4 Columns */}
                         {footerSections.map((section) => (
@@ -84,4 +94,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default FooterDesktop;

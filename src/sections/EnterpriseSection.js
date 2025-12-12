@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/utils/motion";
 import Image from "next/image";
 import Container from "@/components/UI/Container";
-import CardWebSearch from "@/components/UI/CardWebSearch";
+import CardWebSearch from "@/components/CardWebSearch";
 
 const EnterpriseSection = () => {
     return (
