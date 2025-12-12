@@ -20,9 +20,11 @@ const LoginForm = (props) => {
         e.preventDefault();
         const result = login(username, password);
         setFeedback(result?.success);
-        setTimeout(() => {
-            router.push("/dashboard");
-        }, 500);
+        if (result?.success) {
+            setTimeout(() => {
+                router.push("/dashboard");
+            }, 500);
+        }
     };
 
     return (
