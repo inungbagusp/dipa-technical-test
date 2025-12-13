@@ -11,7 +11,7 @@ import CustomLayout from "@/components/Layout/CustomLayout";
 export default function Home() {
 	return (
 		<div>
-			<main className="bg-[#F7F9FC]">
+			<main className="bg-white">
 				<CustomLayout>
 					<Hero />
 					<BrandSlider />

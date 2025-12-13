@@ -42,6 +42,10 @@ body {
   background: radial-gradient(circle at bottom, rgba(147,210,255,0.22), white 75%);
 }
 
+.swiper-slide {
+  width: auto !important;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);

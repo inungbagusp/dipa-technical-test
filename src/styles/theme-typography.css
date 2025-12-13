@@ -14,7 +14,7 @@
     font-family: "Roobert";
     src: url("/fonts/Roobert/Roobert-Medium.otf") format("opentype");
     font-weight: 500;
-    font-style: normal;
+    font-style: medium;
     font-display: swap;
 }
 
@@ -30,7 +30,7 @@
     font-family: "Inter";
     src: url("/fonts/Inter/Inter-Medium.woff2") format("woff2");
     font-weight: 500;
-    font-style: normal;
+    font-style: medium;
     font-display: swap;
 }
 
@@ -46,7 +46,7 @@
     font-family: "Inter Tight";
     src: url("/fonts/InterTight/InterTight-Medium.ttf") format("truetype");
     font-weight: 500;
-    font-style: normal;
+    font-style: medium;
     font-display: swap;
 }
 
@@ -62,7 +62,16 @@
     font-family: "Neue Montreal";
     src: url("/fonts/NeueMontreal/NeueMontreal-Medium.otf") format("opentype");
     font-weight: 500;
-    font-style: normal;
+    font-style: medium;
+    font-display: swap;
+}
+
+/* Kumbh Sans */
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url("/fonts/KumbhSans/KumbhSans.ttf") format("truetype");
+    font-weight: 600;
+    font-style: semi-bold;
     font-display: swap;
 }
 
@@ -74,6 +83,7 @@
     --font-inter: "Inter", ui-sans-serif, system-ui;
     --font-intertight: "Inter Tight", ui-sans-serif, system-ui;
     --font-montreal: "Neue Montreal", ui-sans-serif, system-ui;
+    --font-kumbh: "Kumbh Sans", ui-sans-serif, system-ui;
 
     /* Font Sizes */
     --font-12: 12px;
@@ -90,6 +100,7 @@
     --font-72: 72px;
 
     /* Line Heights */
+    --lh-100: 100%;
     --lh-120: 120%;
     --lh-130: 130%;
     --lh-150: 150%;
@@ -99,8 +110,11 @@
 
     /* Letter Spacing */
     --ls-neg2: -0.02em;
+    --ls-neg1: -0.01em;
     --ls-0: 0em;
     --ls-1: 0.01em;
+    --ls-2: 0.02em;
+    --ls-3: 0.03em;
     --ls-4: 0.04em;
 }
 
@@ -113,6 +127,7 @@
     .ff-inter { font-family: var(--font-inter); }
     .ff-intertight { font-family: var(--font-intertight); }
     .ff-montreal { font-family: var(--font-montreal); }
+    .ff-kumbh { font-family: var(--font-kumbh); }
 
     /* Font sizes */
     .ts-12 { font-size: var(--font-12); }
@@ -129,6 +144,7 @@
     .ts-72 { font-size: var(--font-72); }
 
     /* Line heights */
+    .lh-100 { line-height: var(--lh-100); }
     .lh-120 { line-height: var(--lh-120); }
     .lh-130 { line-height: var(--lh-130); }
     .lh-150 { line-height: var(--lh-150); }
@@ -138,8 +154,11 @@
 
     /* Letter spacings */
     .ls-neg2 { letter-spacing: var(--ls-neg2); }
+    .ls-neg1 { letter-spacing: var(--ls-neg1); }
     .ls-0 { letter-spacing: var(--ls-0); }
     .ls-1 { letter-spacing: var(--ls-1); }
+    .ls-2 { letter-spacing: var(--ls-2); }
+    .ls-3 { letter-spacing: var(--ls-3); }
     .ls-4 { letter-spacing: var(--ls-4); }
 
 
