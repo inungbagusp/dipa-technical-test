@@ -24,6 +24,7 @@
   --text-gray-muted: #677489;
   --text-gray-deep: #4a5567;
   --text-gray-light: #97a3b6;
+  --text-gray-lighter: #7F8995;
 
   /* LIGHT TEXT ON DARK */
   --text-light-gray: #e5e9f1;
@@ -35,4 +36,8 @@
   --color-border-light-gray: #E5E9F1;
   --color-border-white-soft: #FFFFFF14;
   --color-border-gray-soft: #E3E8F1;
+
+  /* SIDEBAR COLORS */
+  --sidebar-bg: #111316;
+  --sidebar-bg-light: #282E333D;
 }
