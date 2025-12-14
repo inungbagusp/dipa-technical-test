@@ -4,7 +4,7 @@ const ChartFilter = ({ activeRange, setActiveRange }) => {
 	const filters = ["All", "1W", "1M", "3M", "6M", "1Y"];
 
 	return (
-		<div className="flex items-center gap-[2px] bg-[#111418] px-[10px] py-[3px] rounded-md border border-[#1C2127] shadow-xl">
+		<div className="flex items-center gap-[2px] bg-[#111418] px-[3px] py-[3px] rounded-md border border-[#1C2127] shadow-xl">
 			{filters.map((item) => {
 				const isActive = activeRange === item;
 
