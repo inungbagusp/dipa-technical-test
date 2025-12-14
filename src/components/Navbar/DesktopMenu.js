@@ -13,7 +13,7 @@ const DesktopMenu = () => {
 
 
 	return (
-		<header className="w-full bg-white border-b border-border-light-gray/80">
+		<header className="w-full bg-white">
 			<Container className="h-[84px] px-[80px] flex items-center justify-between">
 				
 				{/* Logo */}
