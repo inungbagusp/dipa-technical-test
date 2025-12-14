@@ -21,6 +21,7 @@ const SearchBar = () => {
                 "rounded-lg",
                 "placeholder-[#677489]",
                 "focus:outline-none",
+                "focus:border border-[#418776]",
                 "w-full",
                 ].join(" ")}
             />
