@@ -30,15 +30,13 @@ const AiAutomation = () => {
             >
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/image/background/bg-ai-automation.png"
+                        src="/image/background/bg-ai-automation.webp"
                         alt="cta background"
                         fill
                         className="object-cover"
                         priority
                     />
                 </div>
-
-                <div className="absolute inset-0 z-10 bg-linear-to-b from-[#0B122A]/40 via-[#0D152F]/30 to-[#0E182F]/50" />
 
                 {/* CONTENT */}
                 <div className="relative z-11 max-w-[805px] mx-auto text-center">
@@ -56,7 +54,11 @@ const AiAutomation = () => {
                         ].join(" ")}
                     >
                         Turn workflow into <br />
-                        <span className="text-[#5C8DFF]">AI agent</span> automations.
+                        <span className={[
+                            "bg-[linear-gradient(246deg,#93D2FF_61.46%,#1956FF_93.83%)]",
+                            "bg-clip-text",
+                            "text-transparent",
+                        ].join(" ")}>AI agent</span> automations.
                     </motion.h2>
 
                     <motion.p

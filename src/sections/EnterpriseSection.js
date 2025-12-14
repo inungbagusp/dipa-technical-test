@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/utils/motion";
 import Image from "next/image";
 import Container from "@/components/UI/Container";
-import CardWebSearch from "@/components/CardWebSearch";
 
 const EnterpriseSection = () => {
     return (
@@ -46,9 +45,7 @@ const EnterpriseSection = () => {
                         "ls-4",
                         "text-transparent",
                         "bg-clip-text",
-                        "bg-linear-to-r",
-                        "from-[#93D2FF]",
-                        "to-[#124FF8]",
+                        "bg-[linear-gradient(33deg,#93D2FF_-22.12%,#0542FC_33.96%)]",
                         "mb-2",
                         "lg:text-left",
                         "lg:text-[16px]",
@@ -88,7 +85,7 @@ const EnterpriseSection = () => {
                             className={[
                                 "w-full",
                                 "h-[300px]",
-                                "bg-white/5",
+                                "bg-[linear-gradient(140deg,#0E133A_0%,#0A1B4A_50%,#112B6B_100%),radial-gradient(circle_at_80%_75%,rgba(57,117,255,0.35)_0%,rgba(0,0,0,0)_70%),linear-gradient(180deg,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_40%)]",
                                 "border border-white/10",
                                 "backdrop-blur-xl",
                                 "rounded-3xl",
@@ -119,20 +116,23 @@ const EnterpriseSection = () => {
                                 "lh-160",
                                 "ls-1",
                                 "md:text-[18px]",
-                                "max-w-[400px]",
+                                "max-w-[450px]",
                             ].join(" ")}
                             >
-                                Bring workflow automation and AI to the entire organization.
+                                Bring workflow automation and AI to the entire organization with apps, chatbots, and integrations.
                             </p>
 
                             {/* PREVIEW IMAGE */}
                             <div className="flex justify-center mt-[50px]">
-                                <Image 
-                                    src="/image/enterprise/enterprise-web-search.png" 
-                                    width={440}
-                                    height={160}
-                                    alt="Chat example"
-                                />
+                                <div className="max-w-[440px] mx-auto rounded-2xl">
+                                    <Image 
+                                        src="/image/enterprise/enterprise-web-search-v3.png" 
+                                        width={440}
+                                        height={160}
+                                        alt="Chat example"
+                                        priority
+                                    />
+                                </div>
                             </div>
 
                             <Image 
@@ -150,7 +150,7 @@ const EnterpriseSection = () => {
                             className={[
                                 "w-full",
                                 "h-[300px]",
-                                "bg-white/5",
+                                "bg-[linear-gradient(140deg,#0E133A_0%,#0A1B4A_50%,#112B6B_100%),radial-gradient(circle_at_80%_75%,rgba(57,117,255,0.35)_0%,rgba(0,0,0,0)_70%),linear-gradient(180deg,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_40%)]",
                                 "border border-white/10",
                                 "backdrop-blur-xl",
                                 "rounded-3xl",
@@ -170,10 +170,10 @@ const EnterpriseSection = () => {
                                     width={252}
                                     height={294}
                                     alt="flash"
-                                    className="absolute top-[-170px] right-[-20px]"
+                                    className="absolute top-[-160px] right-[-20px]"
                                 />
                                 <Image 
-                                    src="/image/enterprise/enterprise-security-v2.png"
+                                    src="/image/enterprise/security-banner.png"
                                     width={286}
                                     height={178}
                                     alt="Security"
@@ -216,7 +216,7 @@ const EnterpriseSection = () => {
                             className={[
                                 "w-full",
                                 "h-[300px]",
-                                "bg-white/5",
+                                "bg-[linear-gradient(140deg,#0E133A_0%,#0A1B4A_50%,#112B6B_100%),radial-gradient(circle_at_80%_75%,rgba(57,117,255,0.35)_0%,rgba(0,0,0,0)_70%),linear-gradient(180deg,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_40%)]",
                                 "border border-white/10",
                                 "backdrop-blur-xl",
                                 "rounded-3xl",
@@ -269,7 +269,7 @@ const EnterpriseSection = () => {
                             className={[
                                 "w-auto",
                                 "h-[300px]",
-                                "bg-white/5",
+                                "bg-[linear-gradient(140deg,#0E133A_0%,#0A1B4A_50%,#112B6B_100%),radial-gradient(circle_at_80%_75%,rgba(57,117,255,0.35)_0%,rgba(0,0,0,0)_70%),linear-gradient(180deg,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_40%)]",
                                 "border border-white/10",
                                 "backdrop-blur-xl",
                                 "rounded-3xl",
@@ -303,7 +303,7 @@ const EnterpriseSection = () => {
                                     "md:text-[18px]",
                                 ].join(" ")}
                             >
-                                Build tools with drag-and-drop simplicity.
+                                Build easily with drag and drop, low/no‑code and collaboration tools.
                             </p>
 
                             <Image 

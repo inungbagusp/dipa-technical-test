@@ -7,7 +7,7 @@ import { fadeUp, staggerContainer } from "@/utils/motion";
 import Image from "next/image";
 
 export default function PricingSection() {
-  const [isAnnual, setIsAnnual] = useState(true);
+  const [isAnnual, setIsAnnual] = useState(false);
 
   return (
     <motion.section
@@ -99,7 +99,7 @@ export default function PricingSection() {
                         "cursor-pointer",
                         "relative",
                         "transition-all",
-                        isAnnual ? "bg-blue-200" : "bg-border-gray",
+                        isAnnual ? "bg-[#4784fd]" : "bg-border-gray",
                         "lg:w-[50px]",
                         "lg:h-7",
                     ].join(" ")}
@@ -135,23 +135,19 @@ export default function PricingSection() {
                     >
                         Annual
                     </button>
-
-                    {/* Badge */}
-                    {isAnnual && (
-                        <span className={[
-                            "px-3",
-                            "py-1",
-                            "bg-blue-100",
-                            "text-(--primary)",
-                            "rounded-full",
-                            "ts-12",
-                            "lh-150",
-                            "ls-0",
-                        ].join(" ")}
-                        >
-                            10% OFF
-                        </span>
-                    )}
+                    <span className={[
+                        "px-3",
+                        "py-1",
+                        "bg-blue-100",
+                        "text-(--primary)",
+                        "rounded-full",
+                        "ts-12",
+                        "lh-150",
+                        "ls-0",
+                    ].join(" ")}
+                    >
+                        10% OFF
+                    </span>
                 </div>
             </motion.div>
 
@@ -306,7 +302,6 @@ export default function PricingSection() {
                     "p-1",
                     "rounded-3xl",
                     "bg-linear-to-b from-[#124FF8] to-[#93D2FF]",
-                    "shadow-xl",
                     "relative",
                     "overflow-hidden",
                     "lg:w-[480px]",
@@ -317,7 +312,7 @@ export default function PricingSection() {
                         BEST VALUE
                     </div>
 
-                    <div className="bg-white p-4 lg:p-10 rounded-3xl">
+                    <div className="bg-white p-4 lg:py-6 lg:px-8 lg:min-h-[312px] rounded-3xl">
                         <div className="flex justify-between pb-6 mb-6 border-b border-border-gray-soft">
                             <div className="flex flex-col justify-between gap-7 max-w-[180px]">
                                 <h3 className={[
@@ -374,15 +369,18 @@ export default function PricingSection() {
                                         "h-[40px]",
                                         "max-w-[120px]",
                                         "rounded-full",
-                                        "border",
                                         "flex",
                                         "items-center",
                                         "justify-center",
-                                        "hover:bg-gray-100",
-                                        "transition",
                                         "md:max-w-[148px]",
                                         "md:h-[48px]",
-                                        "bg-linear-to-t from-[#124FF8] to-[#93D2FF]"
+                                        "border border-[#0542FC]",
+                                        "bg-[linear-gradient(181deg,#93D2FF_-43.42%,#0542FC_99.17%)]",
+                                        "shadow-[inset_0_2px_1px_rgba(255,255,255,0.24)]",
+                                        "hover:bg-[linear-gradient(73deg,#93D2FF_-0.63%,#0C46F8_46.2%)]",
+                                        "hover:shadow-[1px_2px_18px_rgba(0,0,0,0.08),inset_0_2px_1px_rgba(255,255,255,0.24)]",
+                                        "transition-all duration-200",
+                                        "cursor-pointer"
                                     ].join(" ")}
                                 >
                                     <span className={[
