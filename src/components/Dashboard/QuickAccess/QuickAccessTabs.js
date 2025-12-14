@@ -6,7 +6,7 @@ import { quickAccessTabs } from "@/data/dashboard";
 const QuickAccessTabs = ({ activeTab, setActiveTab }) => {
 
     return (
-        <div className="flex flex-col sm:flex-row gap-2 bg-[#0E1114] border border-[#1C2127] rounded-lg px-2 py-1 mb-4">
+        <div className="flex flex-col xl:justify-between sm:flex-row gap-2 bg-[#0E1114] border border-[#1C2127] rounded-lg px-[3px] py-[3px] mb-4">
             {quickAccessTabs.map(tab => {
                 const isActive = activeTab === tab.key;
 

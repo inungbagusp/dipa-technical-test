@@ -9,7 +9,7 @@ const StakingTabs = ({ activeTab, setActiveTab }) => {
         <div className="flex flex-col gap-2 sm:gap-0 sm:flex-row sm:items-center justify-between">
             <div className={[
                 "flex flex-col gap-2 sm:gap-0 items-start sm:items-center sm:flex-row",
-                "bg-[#0E1114] border border-[#1C2127] rounded-lg px-2 py-1"
+                "bg-[#0E1114] border border-[#1C2127] rounded-lg px-[3px] py-[3px]"
             ].join(" ")}
             >
                 {tabs.map((tab) => (
