@@ -27,10 +27,10 @@ const Hero = () => {
             {/* Background */}
             <div className="absolute inset-0">
                 <Image
-                    src="/image/background/bg-home.png"
+                    src="/image/background/bg-home-v3.png"
                     alt="Background Grid"
                     fill
-                    className="object-cover opacity-40"
+                    className="object-cover"
                     priority
                 />
             </div>
@@ -68,7 +68,7 @@ const Hero = () => {
                     >
                         Turn workflow into <br />
                         <span className={[
-                            "bg-[linear-gradient(33deg,#93D2FF_-22.12%,#0542FC_33.96%)]",
+                            "bg-[linear-gradient(60deg,#93D2FF_-22.12%,#0542FC_40.96%)]",
                             "bg-clip-text",
                             "text-transparent",
                         ].join(" ")}>AI agent</span> automations.

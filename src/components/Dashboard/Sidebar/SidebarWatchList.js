@@ -9,7 +9,16 @@ const SidebarWatchlist = () => {
 
 			<div className="flex flex-col">
 				{dashboardWatchlist.map((item) => (
-					<div key={item.symbol} className="cursor-pointer flex gap-3 p-3 hover:bg-[linear-gradient(to_bottom,#2A3036CC,#2A303600)] transition-colors hover:rounded-[6px]">
+					<div key={item.symbol} className={[
+						"cursor-pointer",
+						"flex",
+						"gap-3",
+						"p-3",
+						"hover:bg-[linear-gradient(to_bottom,rgba(42,48,54,0.80)_0%,rgba(42,48,54,1)_100%)]",
+						"transition-colors",
+						"hover:rounded-[6px]"
+					].join(" ")}
+					>
 						<Image
 							src={item?.icon}
 							alt={item?.symbol}
@@ -20,7 +29,7 @@ const SidebarWatchlist = () => {
 							<span className="ff-inter text-[12px] font-normal lh-150 ls-0 text-(--text-gray-light)">{item.symbol}</span>
 							<div className="flex items-center gap-1">
 								<span className="ff-inter text-[14px] font-normal lh-150 ls-0 text-white">{item.price}</span>
-								<div className="flex items-center justify-center gap-1 border border-[#23282F] bg-(--sidebar-bg-light) py-px px-[2px] rounded-[5px]">
+								<div className="flex items-center justify-center gap-1 border border-[#23282F] bg-(--sidebar-bg-light) py-px px-[4px] rounded-[5px]">
 									<span className={[
 										"ff-intertight",
 										"text-[12px]",

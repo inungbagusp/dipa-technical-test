@@ -36,11 +36,11 @@ const PlatformSection = () => {
                         className="absolute top-[10%] left-[14%] lg:left-[20%] lg:top-[12%] -translate-x-1/2"
                     >
                         <Image
-                            src="/image/platform/platform-left.png"
+                            src="/image/platform/platform-left.svg"
                             width={120}
                             height={82}
                             alt="platform-left"
-                            className="drop-shadow-xl z-1 h-auto w-[80px] lg:w-[120px] lg:h-[82px]"
+                            className="z-1 h-auto w-[50px] lg:w-[120px] lg:h-[82px]"
                         />
                     </motion.div>
 
@@ -50,11 +50,11 @@ const PlatformSection = () => {
                         className="absolute right-[10%] top-[14%] translate-x-1/2 lg:right-[20%] lg:top-[20%]"
                     >
                         <Image
-                            src="/image/platform/platform-right.png"
+                            src="/image/platform/platform-right.svg"
                             width={120}
                             height={82}
                             alt="platform-right"
-                            className="drop-shadow-xl z-1 h-auto w-[80px] lg:w-[120px] lg:h-[82px]"
+                            className="z-1 h-auto w-[50px] lg:w-[120px] lg:h-[82px]"
                         />
                     </motion.div>
 
@@ -117,15 +117,11 @@ const PlatformSection = () => {
                             "max-w-[1080px]",
                             "mx-auto",
                             "w-full",
-                            "rounded-tl-lg",
-                            "rounded-tr-lg",
-                            "drop-shadow-[-8px_0px_16px_rgba(0,0,0,0.08)]",
-                            "drop-shadow-[8px_0px_16px_rgba(0,0,0,0.08)]",
-                            "drop-shadow-[0px_-8px_20px_rgba(0,0,0,0.10)]",
+                            "rounded-tl-[16px] rounded-tr-[16px] border border-border-gray shadow-[0_4px_100px_rgba(11,19,46,0.12)]",
                             "relative"
                         ].join(" ")}> 
                             <Image
-                                src="/image/platform/platform-dashboard-v5.png"
+                                src="/image/platform/platform-dashboard.svg"
                                 alt="platform-main"
                                 width={1080}
                                 height={572}

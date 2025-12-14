@@ -32,15 +32,15 @@ export const staggerContainer = {
 };
 
 export const marquee = {
-  animate: {
-    x: ["0%", "-50%"],
-    transition: {
-      x: {
-        repeat: Infinity,
-        repeatType: "loop",
-        duration: 10,
-        ease: "linear",
-      },
-    },
-  },
+	animate: {
+		x: ["0%", "-50%"],
+		transition: {
+			x: {
+				repeat: Infinity,
+				repeatType: "loop",
+				duration: 10,
+				ease: "linear",
+			},
+		},
+	},
 };

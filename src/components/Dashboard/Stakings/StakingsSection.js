@@ -10,7 +10,7 @@ const StakingsSection = () => {
     const [activeTab, setActiveTab] = useState("All");
 
     return (
-        <section className="bg-[#111418] border border-[#1C2127] rounded-xl py-5 px-4 w-full">
+        <section className="bg-[#191D21] border border-[#2A3036] rounded-xl py-5 px-4 w-full">
 
             {/* TITLE */}
             <div className="flex justify-between items-center mb-4">

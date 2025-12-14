@@ -124,9 +124,9 @@ const EnterpriseSection = () => {
 
                             {/* PREVIEW IMAGE */}
                             <div className="flex justify-center mt-[50px]">
-                                <div className="max-w-[440px] mx-auto rounded-2xl">
+                                <div className="max-w-[440px] mx-auto rounded-2xl shadow-[0_12px_32px_0_rgba(0,0,0,0.08)]">
                                     <Image 
-                                        src="/image/enterprise/enterprise-web-search-v3.png" 
+                                        src="/image/enterprise/enterprise-card-websearch.svg" 
                                         width={440}
                                         height={160}
                                         alt="Chat example"

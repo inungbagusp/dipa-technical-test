@@ -299,7 +299,7 @@ export default function PricingSection() {
                 {/* RIGHT CARD — ENTERPRISE */}
                 <div className={[
                     "w-full",
-                    "p-1",
+                    "p-px",
                     "rounded-3xl",
                     "bg-linear-to-b from-[#124FF8] to-[#93D2FF]",
                     "relative",
