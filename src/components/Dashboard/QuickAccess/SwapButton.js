@@ -8,9 +8,9 @@ const SwapButton = () => {
             className={[
                 "w-[40px] h-[40px]",
                 "rounded-full",
-                "bg-[#1A1D21]",
+                "bg-[#2A3036] border border-[#FFFFFF0A]",
                 "flex items-center justify-center",
-                "shadow-[0_0_8px_rgba(0,0,0,0.4)]",
+                "shadow-lg",
                 "cursor-pointer",
                 "z-10"
             ].join(" ")}

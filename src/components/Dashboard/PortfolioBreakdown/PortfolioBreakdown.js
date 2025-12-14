@@ -14,11 +14,11 @@ const PortfolioBreakdownChart = () => {
 
             <div className="flex items-center justify-between w-full">
                 <h3 className="ff-inter font-medium text-[14px] lh-150 ls-neg1 text-white">Portfolio Breakdown</h3>
-                <p className="ff-inter font-medium text-[12px] lh-150 ls-0 text-[#97A3B6] hover:text-white">See all</p>
+                <p className="ff-inter font-medium text-[12px] lh-150 ls-0 text-[#97A3B6] hover:text-white cursor-pointer">See all</p>
             </div>
 
             {/* TEXT DI TENGAH */}
-            <div className="absolute flex flex-col items-center justify-center top-[120px] mb-3">
+            <div className="absolute flex flex-col items-center justify-center top-[108px] mb-3">
                 <p className="ff-inter text-white text-[16px] font-medium lh-150 ls-0">
                     BTC
                 </p>
@@ -39,13 +39,14 @@ const PortfolioBreakdownChart = () => {
                     startAngle={230}
                     endAngle={-55}
                     strokeWidth={6}
+                    cornerRadius={6}
                 >
                 {portfolioBreakdown.map((entry, index) => (
                     <Cell
                         key={index}
                         fill={entry.color}
                         stroke="#111418"
-                        strokeWidth={6}
+                        strokeWidth={4}
                     />
                 ))}
                 </Pie>

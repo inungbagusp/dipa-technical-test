@@ -46,6 +46,10 @@ body {
   width: auto !important;
 }
 
+.swiper-wrapper {
+  box-shadow: 60px 0px 120px rgba(0, 0, 0, 0.45) !important;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);

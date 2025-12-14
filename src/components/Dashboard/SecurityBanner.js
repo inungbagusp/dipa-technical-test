@@ -27,18 +27,18 @@ const SecurityBanner = () => {
             ].join(" ")}
         >
             <Image
-                src="/image/dashboard/dots-nav-footer.png"
+                src="/image/dashboard/dots-v2.png"
                 alt="dots"
                 width={161}
                 height={113}
-                className="absolute top-[-24px] left-[-4px] pointer-events-none"
+                className="absolute top-[-24px] left-[-40px] pointer-events-none"
             />
             <Image
                 src="/image/dashboard/pattern-dashboard.png"
                 alt="dots"
                 width={178}
                 height={156}
-                className="absolute top-[-12px] right-[-8px] pointer-events-none"
+                className="absolute top-[-12px] right-[-8px] pointer-events-none opacity-70"
             />
 
             {/* LEFT SIDE */}
@@ -91,6 +91,7 @@ const SecurityBanner = () => {
                     "xl:py-1",
                     "md:w-[138px]",
                     "xl:h-[36px]",
+                    "cursor-pointer"
                 ].join(" ")}
             >
                 <span
@@ -101,7 +102,7 @@ const SecurityBanner = () => {
                         "p-px",
                         "bg-[linear-gradient(to_right,#8ADDC6,#4FCBA8)]",
                         "opacity-100",
-                        "group-hover:opacity-90",
+                        "group-hover:opacity-70",
                         "transition-opacity"
                     ].join(" ")}
                 />

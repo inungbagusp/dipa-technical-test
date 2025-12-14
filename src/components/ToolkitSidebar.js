@@ -48,7 +48,7 @@ const ToolkitSidebar = (props) => {
                                 "text-left",
                                 "group",
                                 "py-2",
-                                isActive ? "border-b border-(--primary)" : "border-b border-border-gray",
+                                isActive ? "border-b-2 border-(--primary)" : "border-b border-border-gray",
                                 "lg:py-8"
                             ].join(" ")}
                         >

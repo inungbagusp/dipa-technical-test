@@ -5,7 +5,7 @@ const StakingSummaryCard = ({ item }) => {
         <div
             className={[
                 "w-full h-[140px] xl:w-[216px]",
-                "bg-[#1A1D21]",
+                "bg-[#21262B]",
                 "rounded-xl",
                 "border border-[#2A3036]",
                 "py-3 px-4",

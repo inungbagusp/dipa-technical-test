@@ -73,19 +73,19 @@ const ChartContainer = ({ dataSetChart, candleData }) => {
                     </div>
                     <p className="ff-inter text-[14px] font-normal lh-150 ls-0 text-(--text-gray-light)">+$2.987</p>
                 </div>
-                <div className="flex flex-col md:flex-row gap-2 max-h-[36px]">
+                <div className="flex flex-col md:flex-row gap-2 max-h-[36px] z-10">
                     {/* Time Range Filter */}
                     <ChartFilter activeRange={activeRange} setActiveRange={setActiveRange} />
 
                     {/* Chart Mode Switch */}
-                    <div className="max-w-[80px] flex items-center gap-1 bg-[#111418] border border-[#1C2127] rounded-md px-2 py-1">
+                    <div className="max-w-[80px] flex items-center gap-1 bg-[#111418] border border-[#1C2127] rounded-md px-1 py-px">
                         {/* Line Mode */}
                         <button
                             onClick={() => setChartMode("line")}
                             className={[
-                            "p-1 px-2 rounded-md transition-colors cursor-pointer",
+                            "py-px px-2 rounded-md transition-colors cursor-pointer h-[24px]",
                             chartMode === "line"
-                                ? "bg-[#1A1D21]"
+                                ? "bg-[#2A3036]"
                                 : "opacity-50 hover:opacity-80"
                             ].join(" ")}
                         >
@@ -95,25 +95,39 @@ const ChartContainer = ({ dataSetChart, candleData }) => {
                         <button
                             onClick={() => setChartMode("candle")}
                             className={[
-                            "p-1 px-2 rounded-md transition-colors cursor-pointer",
+                            "py-px px-2 rounded-md transition-colors cursor-pointer h-[24px]",
                             chartMode === "candle"
-                                ? "bg-[#1A1D21]"
-                                : "opacity-50 hover:opacity-80"
+                                ? "bg-[#2A3036]"
+                                : ""
                             ].join(" ")}
                         >
-                            <Image src="/image/dashboard/icon-candle.svg" width={14} height={14} alt="candlestick chart" />
+                            <Image
+                                src={chartMode === "candle" ? "/image/dashboard/icon-candle-aktif.svg" : "/image/dashboard/icon-candle.svg"}
+                                width={14}
+                                height={14}
+                                alt="candlestick chart"
+                                className="h-[14px]"
+                            />
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div className="w-full h-[300px]">
+            <div className="w-full h-[300px] z-10">
                 {chartMode === "line" ? (
                     <PortfolioChart chartData={chartData} />
                 ) : (
                     <CandlestickChart candleData={candleData} />
                 )}
             </div>
+
+            <Image
+                src="/image/dashboard/chart-gradient.png"
+                alt="gradient"
+                width={503}
+                height={469}
+                className="absolute w-full xl:top-[-140%] top-[-20%] left-[-20%] sm:top-[-40%] xl:left-[-30%] z-1"
+            />
 
         </div>
     );

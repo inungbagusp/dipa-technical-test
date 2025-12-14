@@ -1,20 +1,20 @@
 export const dashboardNavItems1 = [
-    { label: "Dashboard", icon: "/image/dashboard/icon-dashboard-2.svg" },
-    { label: "My Assets", icon: "/image/dashboard/icon-my-assets.svg" },
-    { label: "Trade", icon: "/image/dashboard/icon-trade.svg" },
-    { label: "Staking", icon: "/image/dashboard/icon-staking.svg" },
-    { label: "Market", icon: "/image/dashboard/icon-market.svg" },
+    { label: "Dashboard", icon: "/image/dashboard/icon-dashboard.svg", iconActive: "/image/dashboard/icon-dashboard-aktif.svg" },
+    { label: "My Assets", icon: "/image/dashboard/icon-my-assets.svg", iconActive: "/image/dashboard/icon-my-assets-aktif.svg" },
+    { label: "Trade", icon: "/image/dashboard/icon-trade.svg", iconActive: "/image/dashboard/icon-trade-aktif.svg" },
+    { label: "Staking", icon: "/image/dashboard/icon-staking.svg", iconActive: "/image/dashboard/icon-staking-aktif.svg" },
+    { label: "Market", icon: "/image/dashboard/icon-market.svg", iconActive: "/image/dashboard/icon-market-aktif.svg" },
 ];
 
 export const dashboardNavItems2 = [
-    { label: "News & Trends", icon: "/image/dashboard/icon-newspaper.svg" },
-    { label: "Watchlist", icon: "/image/dashboard/icon-watchlist.svg" },
-    { label: "Analytics", icon: "/image/dashboard/icon-analytics.svg" },
+    { label: "News & Trends", icon: "/image/dashboard/icon-newspaper.svg", iconActive: "/image/dashboard/icon-newspaper-aktif.svg" },
+    { label: "Watchlist", icon: "/image/dashboard/icon-watchlist.svg", iconActive: "/image/dashboard/icon-watchlist-aktif.svg" },
+    { label: "Analytics", icon: "/image/dashboard/icon-analytics.svg", iconActive: "/image/dashboard/icon-analytics-aktif.svg" },
 ];
 
 export const dashboardFooter = [
-    { label: "Help Center", icon: "/image/dashboard/icon-help.svg" },
-    { label: "Referral", icon: "/image/dashboard/icon-referral.svg" },
+    { label: "Help Center", icon: "/image/dashboard/icon-help.svg", iconActive: "/image/dashboard/icon-help-aktif.svg" },
+    { label: "Referral", icon: "/image/dashboard/icon-referral.svg", iconActive: "/image/dashboard/icon-referral-aktif.svg" },
 ];
 
 export const dashboardWatchlist = [

@@ -4,7 +4,7 @@ export default function CommunityCard({ post }) {
     return (
         <div className={[
             "w-[300px] xl:w-[262px]",
-            "bg-[#1A1D21]",
+            "bg-[#21262B]",
             "rounded-xl",
             "border border-[#2A3036]",
             "py-3 px-4",

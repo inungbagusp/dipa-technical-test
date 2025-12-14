@@ -3,7 +3,7 @@ const PortfolioTooltip = ({ active, payload, label }) => {
 	const value = payload[0].value;
 
 	return (
-		<div className="bg-[#1A1D21] border border-[#2A3036] px-4 py-3 rounded-xl shadow-lg min-w-[220px]">
+		<div className="bg-[#25292E] px-4 py-3 rounded-xl shadow-lg min-w-[220px]">
 		
 			<p className="text-[#CDD5E0] text-[11px] ff-inter font-normal lh-150 ls-0 mb-2">{`${label}, 2025`}</p>
 

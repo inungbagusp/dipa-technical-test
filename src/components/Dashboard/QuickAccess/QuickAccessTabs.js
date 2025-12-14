@@ -15,9 +15,9 @@ const QuickAccessTabs = ({ activeTab, setActiveTab }) => {
                         key={tab.key}
                         onClick={() => setActiveTab(tab.key)}
                         className={[
-                            "h-[32px] px-3 rounded-md text-[12px] transition-colors flex items-center gap-1 cursor-pointer",
+                            "h-[22px] px-3 rounded-[4px] text-[12px] transition-colors flex items-center gap-1 cursor-pointer",
                             isActive
-                                ? "bg-[#1A1D21] text-white"
+                                ? "bg-[#2A3036] text-white"
                                 : "text-[#7A828A] hover:text-white"
                         ].join(" ")}
                     >

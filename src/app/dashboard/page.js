@@ -28,7 +28,7 @@ export default function DashboardLayout() {
             </div>
 
             {/* MAIN CONTENT */}
-            <div className="lg:ml-[240px] p-4 md:py-[18px] md:px-[20px] bg-[#191D21]">
+            <div className="lg:ml-[240px] p-4 md:py-[18px] md:px-[20px] bg-[#191D21] border-b border-[#2A3036]">
                 <TopBar setIsOpen={setIsOpen} />
             </div>
             <div className="p-4">
@@ -38,8 +38,8 @@ export default function DashboardLayout() {
                 <div className={[
                     "lg:ml-[240px] p-4 md:py-5 md:px-[20px]",
                     "flex flex-col xl:flex-row",
-                    "bg-[#111418] border border-[#1C2127] rounded-xl",
-                    "gap-6 xl:gap-0"
+                    "bg-[#111418] rounded-xl",
+                    "gap-6 xl:gap-0 relative overflow-hidden"
                 ].join(" ")}
                 >
                     <ChartContainer dataSetChart={dataSetChart} candleData={candleData} />

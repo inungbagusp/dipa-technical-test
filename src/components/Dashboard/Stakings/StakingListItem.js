@@ -5,7 +5,7 @@ import Image from "next/image";
 const StakingListItem = ({ item }) => {
     return (
         <div className={[
-            "flex justify-between items-center px-2 py-2 bg-[#21262B] border border-[#1C2127] rounded-xl hover:bg-[#1A1D21] transition-colors mb-2",
+            "flex justify-between items-center px-2 py-2 bg-[#21262B] border border-[#2A3036] rounded-xl hover:bg-[#1A1D21] transition-colors mb-2",
             "sm:py-3 sm:px-4",
             "cursor-pointer"
         ].join(" ")}

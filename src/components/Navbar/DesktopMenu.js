@@ -14,7 +14,7 @@ const DesktopMenu = () => {
 
 	return (
 		<header className="w-full bg-white">
-			<Container className="h-[84px] px-[80px] flex items-center justify-between">
+			<Container className="h-[84px] flex items-center justify-between">
 				
 				{/* Logo */}
 				<div className="flex items-center gap-2">

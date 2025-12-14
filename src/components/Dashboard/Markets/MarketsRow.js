@@ -7,6 +7,7 @@ const MarketsRow = (props) => {
             "grid",
             "grid-cols-5",
             "px-1 py-[6px] border-b border-[#1C2127] hover:bg-[#1A1D21] transition-colors",
+            "last:border-b-0"
         ].join(" ")}>
 
             <div className="flex items-center gap-3">
