@@ -12,10 +12,11 @@ const Sidebar = () => {
 	return (
 		<aside className={[
 			"w-[240px]",
-			"px-[12px]",
+			"pl-[12px]",
+			"pr-[6px]",
 			"py-[16px]",
 			"bg-[#191D21]",
-			"h-screen fixed left-0 top-0 flex flex-col overflow-y-scroll border-r border-[#2A3036]"
+			"h-screen fixed left-0 top-0 flex flex-col overflow-y-scroll overlay-scroll border-r border-[#2A3036]"
 		].join(" ")}
 		>
 			{/* Logo */}
