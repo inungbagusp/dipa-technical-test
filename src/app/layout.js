@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import ClientBody from "./ClientBody";
 
 export const metadata = {
 	title: "Moniveo",
@@ -8,9 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body>
+			<ClientBody>
 				{children}
-			</body>
+			</ClientBody>
 		</html>
 	);
 }
