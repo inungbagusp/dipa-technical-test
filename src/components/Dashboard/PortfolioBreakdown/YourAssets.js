@@ -6,7 +6,7 @@ const YourAssets = () => {
     return (
         <div className={[
             "py-5 px-4 w-full xl:min-w-[353px]",
-            "bg-[#111418] border border-[#1C2127] rounded-xl"
+            "bg-[#191D21] border border-[#1C2127] rounded-xl"
         ].join(" ")}
         >
             <div className="flex items-center justify-between mb-4">

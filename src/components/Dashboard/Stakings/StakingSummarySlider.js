@@ -59,29 +59,28 @@ const StakingSummarySlider = () => {
             />
 
             {/* LEFT ARROW */}
-            {showLeftArrow && (
-                <button
-                    ref={prevRef}
-                    className={["absolute left-[-16px] top-1/2 -translate-y-1/2",
-                        "w-8 h-8 bg-[#323941] border border-[#FFFFFF0A]",
-                        "rounded-full flex items-center justify-center",
-                        "hover:bg-[#2A3036] transition z-10"
-                    ].join(" ")}
-                >
-                    <Image
-                        src="/image/dashboard/icon-chevron-right.svg"
-                        width={14}
-                        height={14}
-                        alt="Prev"
-                        className="transform -scale-x-100 cursor-pointer"
-                    />
-                </button>
-            )}
+            <button
+                ref={prevRef}
+                className={["absolute left-[8px] top-1/2 -translate-y-1/2",
+                    "w-8 h-8 bg-[#323941] border border-[#FFFFFF0A]",
+                    "rounded-full flex items-center justify-center",
+                    "hover:bg-[#2A3036] transition z-10",
+                    showLeftArrow ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                ].join(" ")}
+            >
+                <Image
+                    src="/image/dashboard/icon-chevron-right.svg"
+                    width={14}
+                    height={14}
+                    alt="Prev"
+                    className="transform -scale-x-100 cursor-pointer"
+                />
+            </button>
 
             {/* RIGHT ARROW */}
             <button
                 ref={nextRef}
-                className={["absolute right-[-16px] top-1/2 -translate-y-1/2",
+                className={["absolute right-[8px] top-1/2 -translate-y-1/2",
                     "w-8 h-8 bg-[#323941] border border-[#FFFFFF0A]",
                     "rounded-full flex items-center justify-center",
                     "hover:bg-[#2A3036] transition z-10"

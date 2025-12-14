@@ -16,7 +16,7 @@ const EnterpriseSection = () => {
         >
 
             {/* BACKGROUND GRADIENT */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(39,73,255,0.25),transparent_60%)] pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(39,73,255,0.25),transparent_60%)] pointer-events-none" />
 
             {/* CONTAINER */}
             <Container className={[
@@ -33,7 +33,18 @@ const EnterpriseSection = () => {
                 "xl:px-[80px]",
             ].join(" ")}
             >
-                
+                <div
+                    className={[
+                        "absolute top-[10px] left-1/2",
+                        "-translate-x-1/2 -translate-y-1/2",
+                        "w-[800px] h-[350px]",
+                        "bg-[#4875FF]",
+                        "rounded-full",
+                        "blur-[300px]",
+                        "opacity-60",
+                    ].join(" ")}
+                />
+
                 {/* TOP TEXT */}
                 <motion.p
                     variants={fadeUp}
@@ -49,6 +60,7 @@ const EnterpriseSection = () => {
                         "mb-2",
                         "lg:text-left",
                         "lg:text-[16px]",
+                        "z-20"
                     ].join(" ")}
                 >
                     AI + AUTOMATION
@@ -67,6 +79,7 @@ const EnterpriseSection = () => {
                         "ls-neg2",
                         "lg:text-left",
                         "lg:text-[56px]",
+                        "z-20"
                     ].join(" ")}
                 >
                     Enterprise-ready <br /> automation in seconds
@@ -85,7 +98,6 @@ const EnterpriseSection = () => {
                             className={[
                                 "w-full",
                                 "h-[300px]",
-                                "bg-[linear-gradient(140deg,#0E133A_0%,#0A1B4A_50%,#112B6B_100%),radial-gradient(circle_at_80%_75%,rgba(57,117,255,0.35)_0%,rgba(0,0,0,0)_70%),linear-gradient(180deg,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_40%)]",
                                 "border border-white/10",
                                 "backdrop-blur-xl",
                                 "rounded-3xl",
@@ -94,9 +106,22 @@ const EnterpriseSection = () => {
                                 "overflow-hidden",
                                 "lg:w-[720px]",
                                 "md:h-[400px]",
-                                "md:p-8"
+                                "md:p-8",
+                                "bg-[#FFFFFF0A]",
+                                "z-20"
                             ].join(" ")}
                         >
+                            <div
+                                className={[
+                                    "absolute bottom-[10px] left-1/2",
+                                    "-translate-x-1/2 -translate-y-1/2",
+                                    "w-[400px] h-[400px]",
+                                    "bg-[#4875FF]",
+                                    "rounded-full",
+                                    "blur-[300px]",
+                                    "opacity-60",
+                                ].join(" ")}
+                            />
                             <h3 className={[
                                     "font-medium",
                                     "text-white",
@@ -150,7 +175,6 @@ const EnterpriseSection = () => {
                             className={[
                                 "w-full",
                                 "h-[300px]",
-                                "bg-[linear-gradient(140deg,#0E133A_0%,#0A1B4A_50%,#112B6B_100%),radial-gradient(circle_at_80%_75%,rgba(57,117,255,0.35)_0%,rgba(0,0,0,0)_70%),linear-gradient(180deg,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_40%)]",
                                 "border border-white/10",
                                 "backdrop-blur-xl",
                                 "rounded-3xl",
@@ -161,9 +185,23 @@ const EnterpriseSection = () => {
                                 "lg:pb-10",
                                 "lg:w-[416px]",
                                 "md:h-[400px]",
-                                "md:p-8"
+                                "md:p-8",
+                                "bg-[#FFFFFF0A]",
+                                "z-20",
+                                "relative",
                             ].join(" ")}
                         >
+                            <div
+                                className={[
+                                    "absolute top-[100px] left-1/2",
+                                    "-translate-x-1/2 -translate-y-1/2",
+                                    "w-[400px] h-[200px]",
+                                    "bg-[#4875FF]",
+                                    "rounded-full",
+                                    "blur-[300px]",
+                                    "opacity-60",
+                                ].join(" ")}
+                            />
                             <div className="relative mb-5 mt-10 md:mt-0">
                                 <Image 
                                     src="/image/enterprise/enterprise-flash.png"
@@ -216,7 +254,6 @@ const EnterpriseSection = () => {
                             className={[
                                 "w-full",
                                 "h-[300px]",
-                                "bg-[linear-gradient(140deg,#0E133A_0%,#0A1B4A_50%,#112B6B_100%),radial-gradient(circle_at_80%_75%,rgba(57,117,255,0.35)_0%,rgba(0,0,0,0)_70%),linear-gradient(180deg,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_40%)]",
                                 "border border-white/10",
                                 "backdrop-blur-xl",
                                 "rounded-3xl",
@@ -227,8 +264,21 @@ const EnterpriseSection = () => {
                                 "xl:p-10",
                                 "lg:w-[496px]",
                                 "md:h-[400px]",
+                                "bg-[#FFFFFF0A]",
+                                "z-20"
                             ].join(" ")}
                         >
+                            <div
+                                className={[
+                                    "absolute bottom-[-200px] left-1/2",
+                                    "-translate-x-1/2 -translate-y-1/2",
+                                    "w-[600px] h-[200px]",
+                                    "bg-[#4875FF]",
+                                    "rounded-full",
+                                    "blur-[300px]",
+                                    "opacity-60",
+                                ].join(" ")}
+                            />
                             <h3 className={[
                                     "font-medium",
                                     "text-white",
@@ -269,7 +319,6 @@ const EnterpriseSection = () => {
                             className={[
                                 "w-auto",
                                 "h-[300px]",
-                                "bg-[linear-gradient(140deg,#0E133A_0%,#0A1B4A_50%,#112B6B_100%),radial-gradient(circle_at_80%_75%,rgba(57,117,255,0.35)_0%,rgba(0,0,0,0)_70%),linear-gradient(180deg,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0)_40%)]",
                                 "border border-white/10",
                                 "backdrop-blur-xl",
                                 "rounded-3xl",
@@ -278,9 +327,22 @@ const EnterpriseSection = () => {
                                 "lg:w-[640px]",
                                 "md:h-[400px]",
                                 "md:p-8",
-                                "xl:p-10"
+                                "xl:p-10",
+                                "bg-[#FFFFFF0A]",
+                                "z-20"
                             ].join(" ")}
                         >
+                            <div
+                                className={[
+                                    "absolute bottom-[-200px] left-1/2",
+                                    "-translate-x-1/2 -translate-y-1/2",
+                                    "w-[600px] h-[200px]",
+                                    "bg-[#4875FF]",
+                                    "rounded-full",
+                                    "blur-[300px]",
+                                    "opacity-60",
+                                ].join(" ")}
+                            />
                             <h3 className={[
                                     "font-medium",
                                     "text-white",

@@ -9,7 +9,7 @@ const PortfolioBreakdownChart = () => {
     return (
         <div className={[
             "flex flex-col items-center justify-center w-full xl:min-w-[353px] relative",
-            "bg-[#111418] border border-[#1C2127] rounded-xl py-5 px-4 gap-2"
+            "bg-[#191D21] border border-[#1C2127] rounded-xl py-5 px-4 gap-2"
         ].join(" ")}>
 
             <div className="flex items-center justify-between w-full">
@@ -38,14 +38,14 @@ const PortfolioBreakdownChart = () => {
                     outerRadius={75}
                     startAngle={230}
                     endAngle={-55}
-                    strokeWidth={6}
+                    strokeWidth={4}
                     cornerRadius={6}
                 >
                 {portfolioBreakdown.map((entry, index) => (
                     <Cell
                         key={index}
                         fill={entry.color}
-                        stroke="#111418"
+                        stroke="#191D21"
                         strokeWidth={4}
                     />
                 ))}

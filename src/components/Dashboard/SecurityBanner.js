@@ -13,7 +13,7 @@ const SecurityBanner = () => {
                 "items-start",
                 "md:items-center",
                 "justify-between",
-                "bg-[#111418]",
+                "bg-[#191D21]",
                 "border border-[#1C2127]",
                 "rounded-xl",
                 "md:px-6",

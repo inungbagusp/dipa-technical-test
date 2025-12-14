@@ -8,7 +8,7 @@ const QuickAccessForm = () => {
         <div>
             <div className="flex flex-col gap-3 bg-[#21262B] border border-[#2A3036] p-3 rounded-lg">
                 <div>
-                    <p className="text-[#7A828A] text-[13px] mb-1">You send</p>
+                    <p className="ff-inter text-[#CDD5E0] text-[14px] lh-150 ls-0 font-normal mb-1">You send</p>
 
                     <div className="flex items-center bg-[#2A3036] border border-[#1C2127] rounded-lg px-3 h-[48px]">
                         <input
@@ -27,7 +27,7 @@ const QuickAccessForm = () => {
 
                 {/* YOU RECEIVE */}
                 <div>
-                    <p className="text-[#7A828A] text-[13px] mb-1">You'll receive</p>
+                    <p className="ff-inter text-[#CDD5E0] text-[14px] lh-150 ls-0 font-normal mb-1">You'll receive</p>
 
                     <div className="flex items-center bg-[#2A3036] border border-[#1C2127] rounded-lg px-3 h-[48px]">
                         <input
@@ -39,8 +39,7 @@ const QuickAccessForm = () => {
                     </div>
                 </div>
 
-                {/* Exchange Rate */}
-                <p className="text-[#7A828A] text-[12px]">
+                <p className="ff-inter text-border-gray lh-150 ls-0 font-medium text-[12px]">
                     1 ETH = 1,850 USDT
                 </p>
             </div>

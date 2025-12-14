@@ -49,7 +49,10 @@ const FooterDesktop = () => {
                                 <input
                                     type="email"
                                     placeholder="Your email"
-                                    className="bg-transparent px-4 ts-16 outline-none flex-1 text-gray-600 h-[48px]"
+                                    className={[
+                                        "bg-transparent px-4 ts-16 outline-none flex-1 text-gray-600 h-[48px]",
+                                        "focus:border border-[#AABFF9] rounded-[6px]",
+                                    ].join(" ")}
                                 />
                                 <Image
                                     src="/image/icon/arrow-narrow-right.svg"
