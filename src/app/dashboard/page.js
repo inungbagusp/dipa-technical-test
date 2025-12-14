@@ -28,7 +28,7 @@ export default function DashboardLayout() {
             </div>
 
             {/* MAIN CONTENT */}
-            <div className="lg:ml-[240px] p-4 md:py-[18px] md:px-[20px] bg-[#191D21] border-b border-[#2A3036]">
+            <div className="lg:ml-[240px] p-4 md:py-[18px] md:px-[20px] bg-[#191D21] border-b border-[#2A3036] sticky top-0 z-50">
                 <TopBar setIsOpen={setIsOpen} />
             </div>
             <div className="p-4">
