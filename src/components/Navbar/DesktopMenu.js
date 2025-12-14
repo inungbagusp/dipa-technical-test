@@ -72,7 +72,14 @@ const DesktopMenu = () => {
 				<div className="flex items-center gap-4 ml-6 relative">
 					<button
 						onClick={() => setActivePopup(activePopup === "login" ? null : "login")}
-						className="cursor-pointer h-[48px] w-[89px] px-6 py-2 rounded-full border border-border-light text-(--text-gray-scale-800) font-roobert ts-14 lh-150 ls-1 text"
+						className={[
+							"cursor-pointer h-[48px] w-[89px] px-6 py-2",
+							"rounded-full border border-border-light",
+							"text-(--text-gray-scale-800) font-roobert ts-14 lh-150 ls-1",
+							"hover:bg-[linear-gradient(180deg,#F7FAFF_0%,#E6ECF5_100%)]",
+							"hover:border-[#A5B8DC]",
+							"transition-all duration-200",
+						].join(" ")}
 					>
 						Login
 					</button>
@@ -86,7 +93,24 @@ const DesktopMenu = () => {
 
 					<button
 						onClick={() => setActivePopup(activePopup === "signup" ? null : "signup")}
-						className="cursor-pointer h-[48px] w-[105px] px-6 py-2 rounded-full text-white font-roobert ts-14 lh-150 ls-1 text bg-linear-to-r from-[#3C7BFF] to-[#0542FC] shadow-md"
+						className={[
+							"cursor-pointer",
+							"h-[48px]",
+							"w-[105px]",
+							"px-6 py-2",
+							"rounded-full",
+							"text-white",
+							"font-roobert",
+							"ts-14",
+							"lh-150",
+							"ls-1",
+							"border border-[#0542FC]",
+							"bg-[linear-gradient(181deg,#93D2FF_-43.42%,#0542FC_99.17%)]",
+							"shadow-[inset_0_2px_1px_rgba(255,255,255,0.24)]",
+							"hover:bg-[linear-gradient(73deg,#93D2FF_-0.63%,#0C46F8_46.2%)]",
+							"hover:shadow-[1px_2px_18px_rgba(0,0,0,0.08),inset_0_2px_1px_rgba(255,255,255,0.24)]",
+							"transition-all duration-200",
+						].join(" ")}
 					>
 						Sign Up
 					</button>

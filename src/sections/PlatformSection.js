@@ -12,20 +12,22 @@ const PlatformSection = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.2 }}
+            className={[
+                "bg-white"
+            ].join(" ")}
         >
-            <div className="bg-platform-gradient">
+            <div className="relative">
                 <Container className={[
                     "relative",
                     "pt-[24px]",
                     "px-[24px]",
                     'pb-0',
                     "text-center",
-                    "border-r",
-                    "border-l",
-                    "border-border-gray",
                     "md:pt-[40px]",
                     "md:px-[40px]",
                     "xl:pt-[100px]",
+                    "border-l border-r border-(--Grayscale-200---Divider,#E3E8EF)",
+                    "bg-[linear-gradient(180deg,#FFF_0%,#F5F8FF_100%)]",
                 ].join(" ")}
                 >
                     {/* FLOATING TOP LEFT IMAGE */}
@@ -110,11 +112,33 @@ const PlatformSection = () => {
 
                     {/* WORKFLOW IMAGE */}
                     <motion.div variants={fadeUp} className="mt-[20px] lg:mt-[56px] mx-auto">
-                        <img
-                            src="/image/platform/platform-dashboard.png"
-                            alt="platform-main"
-                            className="w-full"
-                        />
+                        <div className={[
+                            "flex",
+                            "max-w-[1080px]",
+                            "mx-auto",
+                            "w-full",
+                            "rounded-tl-lg",
+                            "rounded-tr-lg",
+                            "drop-shadow-[-8px_0px_16px_rgba(0,0,0,0.08)]",
+                            "drop-shadow-[8px_0px_16px_rgba(0,0,0,0.08)]",
+                            "drop-shadow-[0px_-8px_20px_rgba(0,0,0,0.10)]",
+                            "relative"
+                        ].join(" ")}> 
+                            <Image
+                                src="/image/platform/platform-dashboard-v5.png"
+                                alt="platform-main"
+                                width={1080}
+                                height={572}
+                                className="w-full h-auto"
+                                priority
+                            />
+                            <div className={[
+                                "w-[300px] lg:w-[800px] xl:w-[1000px]",
+                                "h-[2px]",
+                                "absolute bottom-[-2px] left-1/2 -translate-x-1/2",
+                                "bg-[linear-gradient(90deg,rgba(147,210,255,0)_0%,#93D2FF_25%,#0542FC_50%,#93D2FF_75%,rgba(147,210,255,0)_100%)]",
+                            ].join(" ")} />
+                        </div>
                     </motion.div>
 
                 </Container>

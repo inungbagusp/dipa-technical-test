@@ -13,16 +13,16 @@ const brands = [
 
 const BrandSlider = () => {
     return (
-        <section>
+        <section className="border border-border-gray">
             <div className="max-w-[1320px] mx-auto">
-                <div className="flex items-center">
+                <div className="flex items-center border-r border-l border-border-gray">
                     {/* LEFT TEXT */}
                     <div className={[
                         "max-w-[320px]",
                         "py-[60px]",
                         "px-[48px]",
                         "h-[180px]",
-                        "border",
+                        "border-r",
                         "border-border-gray",
                         "hidden",
                         "md:block"
@@ -36,7 +36,7 @@ const BrandSlider = () => {
                     {/* RIGHT SLIDER */}
                     <div className="flex-1 overflow-hidden">
                         <div className="flex whitespace-nowrap marquee">
-                            <div className="flex items-center justify-center border-t border-b border-border-gray track">
+                            <div className="flex items-center justify-center track">
                                 <div className={[
                                     "max-w-[320px]",
                                     "py-[60px]",

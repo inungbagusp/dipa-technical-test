@@ -16,7 +16,7 @@ const ToolkitPreview = (props) => {
                 width={540}
                 height={420}
                 alt={item.title}
-                className="rounded-xl shadow-lg"
+                className="rounded-xl"
             />
         </div>
     );

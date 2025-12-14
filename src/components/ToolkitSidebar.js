@@ -48,15 +48,13 @@ const ToolkitSidebar = (props) => {
                                 "text-left",
                                 "group",
                                 "py-2",
-                                "border-b",
-                                "border-border-gray",
                                 isActive ? "border-b border-(--primary)" : "border-b border-border-gray",
                                 "lg:py-8"
                             ].join(" ")}
                         >
                             <div className="flex items-center gap-3">
                                 <Image 
-                                    src={item.icon}
+                                    src={isActive ? item.iconActive : item.icon}
                                     width={28}
                                     height={28}
                                     alt={item.title}

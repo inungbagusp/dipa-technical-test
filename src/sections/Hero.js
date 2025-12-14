@@ -15,8 +15,8 @@ const Hero = () => {
             "overflow-hidden",
             "pt-[24px]",
             "pb-[24px]",
-            "border",
-            "border-border-gray",
+            "border-l border-r border-(--Grayscale-200---Divider,#E3E8EF)",
+            "bg-[linear-gradient(180deg,#FFF_0%,#E5EEFF_100%)]",
             "md:pt-[40px]",
             "md:pb-[40px]",
             "lg:h-[900px]",
@@ -67,7 +67,11 @@ const Hero = () => {
                         ].join(" ")}
                     >
                         Turn workflow into <br />
-                        <span className="text-(--primary)">AI agent</span> automations.
+                        <span className={[
+                            "bg-[linear-gradient(33deg,#93D2FF_-22.12%,#0542FC_33.96%)]",
+                            "bg-clip-text",
+                            "text-transparent",
+                        ].join(" ")}>AI agent</span> automations.
                     </motion.h1>
 
                     {/* Subtext */}
@@ -100,16 +104,18 @@ const Hero = () => {
                             "h-[40px]",
                             "px-4",
                             "rounded-full",
-                            "bg-linear-to-r",
-                            "from-[#3C7BFF]",
-                            "to-[#0542FC]",
-                            "shadow-md",
                             "mx-auto",
                             "cursor-pointer",
                             "md:mx-0",
                             "lg:h-[60px]",
                             "lg:px-7",
-                            "lg:mt-14"
+                            "lg:mt-14",
+                            "border border-[#0542FC]",
+							"bg-[linear-gradient(181deg,#93D2FF_-43.42%,#0542FC_99.17%)]",
+							"shadow-[inset_0_2px_1px_rgba(255,255,255,0.24)]",
+							"hover:bg-[linear-gradient(73deg,#93D2FF_-0.63%,#0C46F8_46.2%)]",
+							"hover:shadow-[1px_2px_18px_rgba(0,0,0,0.08),inset_0_2px_1px_rgba(255,255,255,0.24)]",
+							"transition-all duration-200",
                         ].join(" ")}
                     >
                         <span className={[
